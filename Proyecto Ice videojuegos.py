@@ -1,48 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Hola &#x1F600;
-# 
-# Soy **Hesus Garcia**, revisor de código de Triple Ten, y voy a examinar el proyecto que has desarrollado recientemente. Si encuentro algún error, te lo señalaré para que lo corrijas, ya que mi objetivo es ayudarte a prepararte para un ambiente de trabajo real, donde el líder de tu equipo actuaría de la misma manera. Si no puedes solucionar el problema, te proporcionaré más información en la próxima oportunidad. Cuando encuentres un comentario,  **por favor, no los muevas, no los modifiques ni los borres**. 
-# 
-# Revisaré cuidadosamente todas las implementaciones que has realizado para cumplir con los requisitos y te proporcionaré mis comentarios de la siguiente manera:
-# 
-# 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Si todo está perfecto.
-# </div>
-# 
-# <div class="alert alert-block alert-warning">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Si tu código está bien pero se puede mejorar o hay algún detalle que le hace falta.
-# </div>
-# 
-# <div class="alert alert-block alert-danger">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Si de pronto hace falta algo o existe algún problema con tu código o conclusiones.
-# </div>
-# 
-# Puedes responderme de esta forma:
-# <div class="alert alert-block alert-info">
-# <b>Respuesta del estudiante</b> <a class=“tocSkip”></a>
-# </div>
-# 
-# </br>
-# 
-# **¡Empecemos!**  &#x1F680;
-# 
 
 # # Proyecto integrado
 # 
 # La tienda online Ice que vende videojuegos por todo el mundo. Las reseñas de usuarios y expertos, los géneros, las plataformas (por ejemplo, Xbox o PlayStation) y los datos históricos sobre las ventas de juegos están disponibles en fuentes abiertas. Identificaremos patrones que determinen si un juego tiene éxito o no. Esto te permitirá detectar proyectos prometedores y planificar campañas publicitarias.
-# 
 
-# <div class="alert alert-block alert-warning">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Considera la posibilidad de incluir una tabla de contenidos al inicio de tu proyecto. Esto no solo mejorará la estructura y presentación de tu análisis, sino que también facilitará la navegación y comprensión de los distintos temas tratados, especialmente para proyectos extensos con múltiples secciones y subsecciones. Una tabla de contenidos bien organizada puede mejorar significativamente la experiencia del lector y destacar la profesionalidad de tu trabajo.
-# </div>
-# 
 
 # # Paso 1. Abre el archivo de datos y estudia la información general 
 
@@ -92,35 +52,10 @@ data_games.info()
 
 display(data_games[data_games['name'].isna()])
 
-
-# <div class="alert alert-block alert-success">
-#     <b>Comentarios del Revisor</b> <a class="tocSkip"></a><br>
-# Correcto, info(), head()  son herramientas esceneciales que nos ayudaran a hacer un análisis exploratorio inicial. Opcionalmente podrías siempre incluir describe() para tener mejor idea de los valores que toman tus varibales. Continúa con el buen trabajo! </div>
-
 # # Comentarios
 # 
 # Procedí a eliminar dos filas del que tenían valores NaN en 5 de 11 columnas del dataset. Sus ventas ventas eran bajas, por lo tanto, sacarlos no influye en el análisis de datos posterior.
-
-# <div class="alert alert-block alert-warning">
-# <b>Comentario del Revisor:</b>
-# <br>
-# En lugar de usar un encabezado de primer nivel (#), que resulta bastante grande y dominante, puedes optar por un nivel más bajo, como segundo nivel (##) o incluso tercero (###). Esto no solo hace que tu documento sea visualmente más atractivo sino también más fácil de navegar.
-# <br><br>
-# Por ejemplo, en lugar de:
-# <br>
-# <code># Comentarios</code>
-# <br>
-# Podrías usar:
-# <br>
-# <code>## Comentarios</code>
-# <br>
-# o incluso:
-# <br>
-# <code>### Comentarios</code>
-# <br>
-# Esto te ayudará a mantener una jerarquía visual clara en tu documento, facilitando la distinción entre secciones principales y sus subsecciones.
-# </div>
-# 
+ 
 
 # In[8]:
 
@@ -193,11 +128,6 @@ data_games.head()
 # 
 # Se creó una nueva columna llamada total_sales para tener la sumatoria del total de las ventas de cada juego en todas las regiones.
 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Excelente atención a los valores faltantes y la conversión de tipos de datos. La estrategia de reemplazo por la mediana y 'Unknown' es adecuada para mantener la integridad del dataset. 
-# </div>
-# 
 
 # # Paso 3. Analiza los datos
 
@@ -301,11 +231,6 @@ corr
 # 
 # Según los datos que se pueden observar en los gráficos de dispersión y en el cálculo de la correlación entre las variables, no existe una relación entre éstas en ninguno de los dos casos.
 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# El uso de diagramas de dispersión para visualizar las ventas globales por plataforma y el cálculo de correlaciones demuestra un análisis meticuloso. **Has calculado la correlación como se solicitó en el brief del proyecto**, proporcionando una comprensión clara de la relación entre puntuaciones y ventas.
-# </div>
-# 
 
 # In[23]:
 
@@ -470,12 +395,6 @@ else:
     print("No podemos rechazar la hipótesis nula") 
 
 
-# <div class="alert alert-block alert-warning">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# La ejecución de las pruebas de hipótesis está bien realizada, pero sería beneficioso profundizar en la interpretación de los resultados para entender mejor sus implicaciones en el contexto del análisis de videojuegos.
-# </div>
-# 
-
 # # Comentarios
 # El resultado de la prueba arroja que el valor p es 0.07346036608929722, por lo tanto no se debe rechazar la hipótesis nula, es decir, que las calificaciones promedio de los usuarios para los géneros de Acción y Deportes son las mismas.
 
@@ -491,19 +410,7 @@ else:
 # 5. Según las pruebas de hipótesis: 
 #     a) Existe diferencia entre las calificaciones promedio de los usuarios para las plataformas Xbox One y PC.
 #     b) Las calificaciones promedio de los usuarios para los géneros de Acción y Deportes son las mismas.
-#     
-
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Has sintetizado eficazmente los hallazgos clave de tu análisis. La identificación de los años con mayor número de lanzamientos y la preferencia de género entre los usuarios son insights particularmente interesantes que resaltan el éxito de tu investigación.
-# </div>
-# 
-
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-# 
-# ¡Impresionante esfuerzo en este proyecto! 🌟 **Este proyecto está listo para ser aprobado.**<br>
-# Tu habilidad para ejecutar y presentar este trabajo es admirable.<br>
+#
 # <br>Es un placer reconocer tu dedicación y el análisis detallado que has llevado a cabo. Continúa superándote en tus futuras iniciativas. Confío en que aplicarás este conocimiento de manera efectiva en desafíos futuros, avanzando hacia objetivos aún más ambiciosos.
 # </div>
 # 
